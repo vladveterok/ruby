@@ -44,10 +44,9 @@ def englishNumber number
 			elsif left == 9
 				numString += 'nineteen'		
 			end
-			left == 0
-		end
+			left = 0
 #TENS >= 20
-		if write == 2
+		elsif write == 2
 			numString += 'twenty'
 		elsif write == 3
 			numString += 'thirty'
@@ -73,26 +72,29 @@ def englishNumber number
 	write = left
 	left = 0
 
-	if write == 1
-		numString += 'one'
-	elsif write == 2
-		numString += 'two'
-	elsif write == 3
-		numString += 'three'
-	elsif write == 4
-		numString += 'four'
-	elsif write == 5
-		numString += 'five'
-	elsif write == 6
-		numString += 'six'
-	elsif write == 7
-		numString += 'seven'
-	elsif write == 8
-		numString += 'eight'
-	elsif write == 9
-		numString += 'nine'	
-	end	
-	
+	if write > 0
+
+		if write == 1
+			numString += 'one'
+		elsif write == 2
+			numString += 'two'
+		elsif write == 3
+			numString += 'three'
+		elsif write == 4
+			numString += 'four'
+		elsif write == 5
+			numString += 'five'
+		elsif write == 6
+			numString += 'six'
+		elsif write == 7
+			numString += 'seven'
+		elsif write == 8
+			numString += 'eight'
+		elsif write == 9
+			numString += 'nine'	
+		end	
+	end
+
 	if numString == ''
 		return 'zero'
 	end
@@ -100,17 +102,19 @@ def englishNumber number
 	numString
 end
 
+#test input
+#puts englishNumber 15
+
 #Lets give the user a chance to put a number, don't we?
 while true
 	puts 'Gimme numba from 0 to 100!'
-	puts
 	number = gets.chomp
 	result = englishNumber(number.to_i)
 	
 	if number != ''
-		puts result
+		puts result + ' sucker'
+		puts
 	else
 		break
 	end
 end
-#puts englishNumber 3
