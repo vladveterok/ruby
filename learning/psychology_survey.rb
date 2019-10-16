@@ -4,14 +4,14 @@ def ask question
 		reply = gets.chomp.downcase
 
 		if (reply == 'yes' || reply == 'no')
-			answer = reply
+			return reply
 			break
 		else
 			puts 'Could you please answer YES or NO?!'
 			puts
 		end	
 	end
-	answer
+	#answer
 end
 
 
@@ -22,7 +22,7 @@ ask 'Do you love tacos?'
 ask 'Do you love icecream?'
 wet_bed = ask 'Do you wet the bed?'
 puts wet_bed
-
+puts 1400/1000
 
 
 ## ANOTHER APPROACH
