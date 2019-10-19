@@ -1,9 +1,14 @@
+puts 'Gimme words so I can sort it, pleease'
 inputsArray = []
-getInp = gets.chomp
 
-while getInp != ''
+while true
+	getInp = gets.chomp.capitalize
+
+	if getInp == ''
+		break
+	end
+
 	inputsArray.push getInp
-	getInp = gets.chomp
 end
 
 puts inputsArray.sort

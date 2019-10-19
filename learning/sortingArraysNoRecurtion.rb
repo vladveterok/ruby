@@ -20,7 +20,7 @@ while unsorted.length != 0
 	unsorted = still_unsorted
 end
 
-puts sorted
+sorted
 
 end
 
@@ -31,7 +31,7 @@ while true
 	arr.push input
 
 	if input == ''
-		rec_sort arr
+		puts rec_sort arr
 		break
 
 	end

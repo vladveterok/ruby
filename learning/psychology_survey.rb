@@ -22,7 +22,6 @@ ask 'Do you love tacos?'
 ask 'Do you love icecream?'
 wet_bed = ask 'Do you wet the bed?'
 puts wet_bed
-puts 1400/1000
 
 
 ## ANOTHER APPROACH

@@ -3,7 +3,7 @@ firtsYear = gets.chomp.to_i
 puts 'And the last year, please'
 lastYear = gets.chomp.to_i
 
-if firtsYear <= lastYear
+if firtsYear <= lastYear #can we ommit this passage?
 	while firtsYear != lastYear+1
 		
 		if (firtsYear%4 == 0 and firtsYear%100 != 0) or firtsYear%400 == 0

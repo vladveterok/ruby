@@ -1,10 +1,16 @@
-def rec_sort unsorted
+def sort arr
+	rec_sort arr, []
+	#puts arr * 1 
+end
+
+def rec_sort unsorted, sorted
+	if unsorted.length <= 0
+		return sorted
+	end
 	
-	sorted = []
-	
-while unsorted.length != 0
 	smallest = unsorted.pop
 	still_unsorted = []
+	#puts smallest
 
 	unsorted.each do |checked_object|
 
@@ -17,27 +23,23 @@ while unsorted.length != 0
 	end
 
 	sorted.push smallest
-	unsorted = still_unsorted
-end
-
-puts sorted
+	rec_sort still_unsorted, sorted
 
 end
 
+=begin
 arr = []
 while true
-
-	input = gets.chomp.capitalize
-	arr.push input
+input = gets.chomp
+sort arr.push input
 
 	if input == ''
-		rec_sort arr
 		break
-
 	end
 end
+=end
 
-#puts rec_sort (['LOL', 'KEK', 'ABC' 'HO', 'APPLE', 'JUICE', 'BLOCK', 'XEROX', 'COCK'])
+puts sort (['LOL', 'KEK', 'HO', 'APPLE', 'JUICE', 'BLOCK', 'XEROX', 'COCK'])
 
 
 #LOGIC
