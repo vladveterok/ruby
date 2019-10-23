@@ -14,7 +14,7 @@ def rec_sort unsorted, sorted
 
 	unsorted.each do |checked_object|
 
-		if checked_object < smallest
+		if checked_object.downcase < smallest.downcase
 			still_unsorted.push smallest
 			smallest = checked_object
 		else
@@ -39,7 +39,7 @@ sort arr.push input
 end
 =end
 
-puts sort (['LOL', 'KEK', 'HO', 'APPLE', 'JUICE', 'BLOCK', 'XEROX', 'COCK'])
+puts sort (['LOL', 'KEK', 'HO', 'APPLE', 'JUICE', 'BLOCK', 'abc', 'XEROX', 'band', 'COCK'])
 
 
 #LOGIC

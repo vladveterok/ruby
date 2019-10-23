@@ -8,7 +8,7 @@ while unsorted.length != 0
 
 	unsorted.each do |checked_object|
 
-		if checked_object < smallest
+		if checked_object.downcase < smallest.downcase
 			still_unsorted.push smallest
 			smallest = checked_object
 		else
@@ -27,7 +27,7 @@ end
 arr = []
 while true
 
-	input = gets.chomp.capitalize
+	input = gets.chomp
 	arr.push input
 
 	if input == ''

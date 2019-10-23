@@ -5,7 +5,7 @@ def ask question
 
 		if (reply == 'yes' || reply == 'no')
 			return reply
-			break
+			#break
 		else
 			puts 'Could you please answer YES or NO?!'
 			puts

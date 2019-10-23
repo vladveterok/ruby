@@ -1,4 +1,4 @@
-numberOfBottles = 99
+numberOfBottles = 5ага,
 
 while numberOfBottles != 0
 	if numberOfBottles >=3		
