@@ -53,25 +53,6 @@ while true
 	
 end
 
-=begin
-actions = {'Feed' 			=> dragon_01.feed,
-		   'Toss' 			=> dragon_01.toss,
-		   'Walk' 			=> dragon_01.walk,
-		   'Put to bed' 	=> dragon_01.put_to_bed,
-		   'Rock'			=> dragon_01.rock}
-
-
-
-actions['Rock']
-actions['Rock']
-=end
-
-#while true
-#	puts "What would you do with this cutie?"
-#end
-
-#dragon_01 = Dragon.new 'Draggy'
-
 
 
 
