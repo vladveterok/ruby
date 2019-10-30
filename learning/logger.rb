@@ -3,7 +3,6 @@ $global_indent = 0
 def log block_description, &block
 	prefix = '	'*$global_indent
 	
-	
 	puts "#{prefix} #{block_description.inspect} is started..."
 	$global_indent += 1
 	output = block[]
@@ -23,8 +22,5 @@ log "outer block" do
 		end
 		2+3
 	end
-	
-
 	"Yep, it's #{2 + 3}, told you"
-
 end

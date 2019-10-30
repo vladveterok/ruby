@@ -1,5 +1,5 @@
 def profile block_description, &block
-	prof_on = false #thumbler turns profile method on/off
+	prof_on = true #thumbler turns profile method on/off
 	
 	if prof_on
 		start_time = Time.new
